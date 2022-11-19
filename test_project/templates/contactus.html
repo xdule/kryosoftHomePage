@@ -1,0 +1,716 @@
+<!DOCTYPE HTML>{% load static%}
+<html>
+
+<head>
+	<title>Kryosoft</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="{% static 'application/assets/css/main.css' %}" />
+	<!--<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/animation.css" />
+		<script type='text/javascript' src='assets/css/animation.js'></script>-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<noscript>
+		<link rel="stylesheet" href="{% static 'application/assets/css/noscript.css' %}" />
+	</noscript>
+	<link rel="icon" href="{% static 'application/images/tablogo.png' %}">
+</head>
+
+<body class="is-preload landing">
+	<div id="page-wrapper" style="overflow:hidden">
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="/"><img src="{% static 'application/images/logo.png' %}"/></a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="/">Home</a>
+					</li>
+					<li><a href="/about">About Us</a>
+					</li>
+					<li><a href="/jobs">Jobs</a>
+					</li>
+					<li><a href="/magazine">Portfolio</a>
+					</li>
+					<li><a href="/contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Banner -->
+		<section id="banner">
+			<div class="content">
+				<header>
+					<div class="background">
+						<div class="container">
+							<div class="screen">
+								<div class="screen-header">
+									<div class="screen-header-left">
+										<div class="screen-header-button close"></div>
+										<div class="screen-header-button maximize"></div>
+										<div class="screen-header-button minimize"></div>
+									</div>
+									<div class="screen-header-right">
+										<div class="screen-header-ellipsis"></div>
+										<div class="screen-header-ellipsis"></div>
+										<div class="screen-header-ellipsis"></div>
+									</div>
+								</div>
+								<div class="screen-body">
+									<div class="screen-body-item">
+										<div class="app-form">
+											<div class="app-form-group">
+												<input class="app-form-control" id="name" placeholder="NAME">
+											</div>
+											<div class="app-form-group">
+												<input style="    text-transform: none;" id="email" class="app-form-control" placeholder="EMAIL" value="{{email}}">
+											</div>
+											<div class="app-form-group">
+												<input class="app-form-control" id="contact" placeholder="CONTACT NO">
+											</div>
+											<div class="app-form-group message">
+												<textarea rows="3" cols="80" class="app-form-control" id="message" placeholder="MESSAGE"></textarea>
+											</div>
+											<div class="app-form-group buttons">
+												<button class="app-form-button" onclick="submitFunction()">SEND</button>
+											</div>
+										</div>
+									</div>
+									<div class="screen-body-item left">
+										<div class="app-title">
+											<h2 style="    font-size: 2em; line-height: 0.9em;font-weight: 600;" class="align-left mbr-bold mbr-white pb-3 mbr-fonts-style display-1 ulala">Contact<br><span style="font-weight: normal;">Us</span></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="row">
+				<div class="title col-6 col-md-12">
+					<div class="subtitle subtitle-topicright">
+						<img src="{% static 'application/images/abstr1.png' %}">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 1 -->
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<!--<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>-->
+				<li><a href="MAILTO:sales@kryosoft.com" class="icon alt fa-envelope"><span class="label">Email</span></a>
+				</li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Kryosoft. All rights reserved.</li>
+				<li>Design by Kryosoft</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+	<script>
+		function submitFunction(){
+		
+		window.alert("Thanks for the outreach\n\n We will answer your quest as soon as possible! ");
+		/*
+		      var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      window.location.href = "../"
+		    }
+		  };
+		  xhttp.open("POST", "/sendForm", true);
+		  xhttp.setRequestHeader("Content-type", "application/json");
+		  var name = document.getElementById("name").value;
+		  var email = document.getElementById("email").value;
+		  var contact = document.getElementById("contact").value;
+		  var message = document.getElementById("message").value;
+		
+		
+		  var data = JSON.stringify({"name": name, "email":email,"contact":contact,"message":message});
+		  console.log(data);
+		  xhttp.send(data);
+		  */
+		    }
+	</script>
+	<!-- Scripts -->
+	<!--<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	-->
+	<script src="{% static 'application/assets/js/jquery.min.js' %}"></script>
+	<script src="{% static 'application/assets/js/jquery.scrolly.min.js' %}"></script>
+	<script src="{% static 'application/assets/js/jquery.dropotron.min.js' %}"></script>
+	<script src="{% static 'application/assets/js/jquery.scrollex.min.js' %}"></script>
+	<script src="{% static 'application/assets/js/browser.min.js' %}"></script>
+	<script src="{% static 'application/assets/js/breakpoints.min.js' %}"></script>
+	<script src="{% static 'application/assets/js/util.js' %}"></script>
+	<script src="{% static 'application/assets/js/main.js' %}"></script>
+</body>
+<style>
+	.our-vision-card
+		{
+	    /* border: 3px solid white; */
+    text-align: center;
+    padding-bottom: 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background: url('/static/application/images/bcggeo.png') no-repeat;
+    background-size: cover;
+    /* background-color: #39a1db; */
+    background-size: 100%;
+			
+		
+		}
+		
+		.spotlight.style2 >.content {
+    border-bottom:none;
+}
+.subtitle-topic1 {
+    background: #fff;
+	pointer-events: none;
+    box-shadow: 0 0 45px rgba(0,0,0,.35);
+    box-sizing: border-box;
+    width: 46vw;
+    margin-left: 4vw;
+    height: 400px;
+    max-width: 750px;
+    /* max-height: 300px; */
+    color: #393939;
+    line-height: 40px;
+    margin-top: -90px;
+    padding: 97px 18% 97px 10%;
+    position: absolute;
+    z-index: 15;
+}
+.subtitle-topic2 {
+
+    
+    box-sizing: border-box;
+	pointer-events: none;
+    width: 46vw;
+        margin-left: 50vw;
+    height: 400px;
+    max-width: 750px;
+    /* max-height: 300px; */
+    color: #393939;
+    line-height: 40px;
+    margin-top: -300px;
+    padding: 97px 18% 97px 10%;
+    position: absolute;
+    z-index: 15;
+}
+
+.subtitle-topic3 {
+
+    
+    box-sizing: border-box;
+	pointer-events: none;
+    width: 46vw;
+        margin-left: 45vw;
+    height: 400px;
+    max-width: 750px;
+    /* max-height: 300px; */
+    color: #393939;
+    line-height: 40px;
+    margin-top: -300px;
+    padding: 97px 18% 97px 10%;
+    position: absolute;
+    z-index: 15;
+}
+.subtitle-topicleft {
+
+    
+    box-sizing: border-box;
+	pointer-events: none;
+    width: 46vw;
+        margin-left: 5vw;
+    height: 400px;
+    max-width: 750px;
+    /* max-height: 300px; */
+    color: #393939;
+    line-height: 40px;
+    margin-top: -300px;
+    padding: 97px 18% 97px 10%;
+    position: absolute;
+    z-index: 15;
+}
+.subtitle-topicright {
+
+    
+    box-sizing: border-box;
+	pointer-events: none;
+    width: 46vw;
+        margin-left: 45vw;
+    height: 400px;
+    max-width: 750px;
+    /* max-height: 300px; */
+    color: #393939;
+    line-height: 40px;
+    margin-top: -300px;
+    padding: 97px 18% 97px 10%;
+    position: absolute;
+    z-index: 15;
+}
+		.subtitle-topic {
+				background: #fff;
+				box-shadow: 0 0 45px rgba(0,0,0,.35);
+				box-sizing: border-box;
+				color: #393939;
+				line-height: 40px;
+				margin-top: -40px;
+				padding: 97px 0 96px 18%;
+				position: relative;
+				z-index: 5;
+			}
+			.content>header>h2 {
+				font-size: 5em;
+				margin: 0;
+				text-align: left;
+				font-weight: 600;
+				/* font-style: normal; */
+				line-height: 1.2;
+				font-family: Rubik,sans-serif;
+			}
+		
+		
+			#reck
+			{
+			 transition: color 1s ease-out;
+			}
+			#reck:hover
+			{
+			  /*transition: color 1s ease;*/
+			  color:red;
+			 
+			}
+			.body-text
+			{
+			    font-size: 1.4em;
+			}
+			.mbr-button
+			{
+				    border-radius: 100px;
+					cursor: pointer;
+					background: 0 0;
+					border:2px solid #fff;
+					color: #fff;
+					transition: all .3s ease-in-out;
+					padding: 1rem 3rem;
+			
+			}
+			.left1 {
+			background: url(http://payload68.cargocollective.com/1/0/7804/3672456/mariusroosendaal_ipad_0000_1.jpg) no-repeat;
+			background-size: cover;
+			background-color: #39a1db;
+			background-size: 100%;
+			/*padding: 5px;*/
+			width: 50%;
+			/*height: 170px;*/
+			/*margin-top: -2px;*/
+		}
+		.arrow-left{
+		    width: 0;
+				height: 0;
+				/* left: 0; */
+				right: 0;
+				padding-left: 50%;
+				margin-left: auto;
+				margin-right: auto;
+				 left: -43px; 
+			    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #FFF;
+				margin: 60px 0;
+				position: absolute;
+			}
+			.right1 {
+			    width:50%;
+				background-color: #FFF;
+				padding: 66px 5px 66px 5px;
+							font-style: italic;
+					padding: 66px 5px 66px 5px;
+					    color: #777;
+					text-align: center;
+					font-family: 'Roboto', sans-serif;
+			}
+			
+			
+			
+			.left2
+			{
+					width:50%;
+				    background: #FFF;
+					/*width: 365px;*/
+					font-style: italic;
+					padding: 66px 5px 66px 5px;
+					    color: #777;
+					text-align: center;
+					font-family: 'Roboto', sans-serif;
+			}
+			.right2
+			{
+			    width: 50%;
+			/* left: 100px; */
+			background: url(http://payload68.cargocollective.com/1/0/7804/3672456/mariusroosendaal_ipad_0001_2_o.png) no-repeat;
+			background-size: cover;
+			background-color: #8cb359;
+			background-size: 100%;
+			/* padding: 5px; */
+			/* width: 365px; */
+			/*height: 170px;*/
+			/* margin: 25px 375px; */
+			}
+			.arrow-right{
+		    width: 0;
+				height: 0;
+				/* left: 0; */
+				right: 0;
+				padding-left: 50%;
+				margin-left: auto;
+				margin-right: auto;
+				/* left: -100px; */
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #FFF;
+				margin: 60px 0;
+				position: absolute;
+			}
+			
+			
+#code-cover-screen {
+  animation: scrollCodeIn 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scrollCodeIn {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(180px);
+    opacity: 1;
+  }
+}
+
+#scrolling-code {
+  animation: scrollCode 3s 1.65s linear infinite;
+}
+
+#scrolling-code-2 {
+  animation: scrollCode2 3s 1.65s linear infinite;
+  transform: translateY(87px);
+}
+
+@keyframes scrollCode {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  49.99% {
+    transform: translateY(-80px);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(87px);
+    opacity: 0;
+  }
+  50.01% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollCode2 {
+  0% {
+    transform: translateY(87);
+    opacity: 1;
+  }
+  49.99% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99.98% {
+    transform: translatey(-80px);
+    opacity: 1;
+  }
+  99.99% {
+    transform: translateY(87);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*typogr*/
+.container .row div h2 span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container .row div h2 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container .row div h2 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+		
+
+
+/*  tastatura  */		
+
+ button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+ /* background: #ea1d6f;*/
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ddd;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #fff;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+</style>
+<script>
+</script>
+
+</html>
